@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="UE">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{594e373f-f522-4d3e-92a8-b499a273df0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UE\Hooks">
+      <UniqueIdentifier>{df863fea-931d-45a3-87e3-cd69e0c28bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UE\Utilities">
+      <UniqueIdentifier>{8572e09d-252d-4500-9eac-db73b6349559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UE\Classes">
+      <UniqueIdentifier>{59c9e8aa-fa3e-4259-b88f-e697c74d25d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UE\Classes\Math">
+      <UniqueIdentifier>{482bbb50-74a5-4e27-8471-88f1924232e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UE\Classes\TUObjectArray">
+      <UniqueIdentifier>{3fff60a3-db73-4e52-9935-4a552162aad5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UE\Classes\UObject">
+      <UniqueIdentifier>{d1c6f34d-7150-40b8-a214-69d03ad0d23a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UE\Classes\NewFilter1">
+      <UniqueIdentifier>{f6503b7c-acbb-495f-836d-74a1c443d4fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UE\Classes\FNamePool">
+      <UniqueIdentifier>{64afd149-0c48-4ee7-8890-178b8a1bb6ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UnrealIt.cpp" />
+    <ClCompile Include="UnrealEngine\UE.cpp">
+      <Filter>UE</Filter>
+    </ClCompile>
+    <ClCompile Include="UnrealEngine\UObject\UObjectBaseUtility.cpp">
+      <Filter>UE\Classes\UObject</Filter>
+    </ClCompile>
+    <ClCompile Include="UnrealEngine\FNamePool\FNamePool.cpp">
+      <Filter>UE\Classes\FNamePool</Filter>
+    </ClCompile>
+    <ClCompile Include="UnrealEngine\FUObjectArray\FUObjectArray.cpp">
+      <Filter>UE</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UnrealEngine\UE.h">
+      <Filter>UE</Filter>
+    </ClInclude>
+    <ClInclude Include="UnrealEngine\FUObjectArray\FUObjectArray.h">
+      <Filter>UE\Classes\TUObjectArray</Filter>
+    </ClInclude>
+    <ClInclude Include="UnrealEngine\UObject\CoreUObject.h">
+      <Filter>UE\Classes\UObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Types.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Log.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="UnrealEngine\FNamePool\FNamePool.h">
+      <Filter>UE\Classes\FNamePool</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\PatternScanner.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

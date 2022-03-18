@@ -33,14 +33,19 @@ bool Initalize(HMODULE GameModule)
 		printf("[FAIL] Engine version was not found by string, you can proceed anyways.\n");
 	}
 
-
+	/*
+		Both contain a string in the image to assist you in finding these addresses.
+		GUObjectArray https://imgur.com/7r4tOBc
+		NamePoolData https://imgur.com/WJo0u6a
+	*/
+		
 	GUObjectArray = PatternScan<FUObjectArray*>("48 8D 0D ? ? ? ? E8 ? ? ? ? 48 8D 8D ? ? ? ? E8 ? ? ? ? 48 8D 8D", BaseAddress, SizeOfImage, true);
 	if (!GUObjectArray) {
 		printf("[FAIL] GUObjectArray not found.\n");
 		return false;
 	}
 
-
+	
 	NamePoolData = PatternScan<FNamePool*>("48 8D 0D ? ? ? ? E8 ? ? ? ? C6 05 ? ? ? ? 01 0F 10", BaseAddress, SizeOfImage, true);
 	if (!NamePoolData) {
 		printf("[FAIL] NamePoolData not found.\n");
